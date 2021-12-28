@@ -5,8 +5,8 @@ import jwt_decode from "jwt-decode";
 import { useDispatch } from "react-redux";
 import { adminCheck } from "../store/actions/actions";
 
-export const BASE_API_URL = "http://localhost:9999/";
-// export const BASE_API_URL = "/";
+// export const BASE_API_URL = "http://localhost:9999/";
+export const BASE_API_URL = "/";
 
 export const useJWTData = () => {
   const decoded_jwt = Cookies.get("jwt")
